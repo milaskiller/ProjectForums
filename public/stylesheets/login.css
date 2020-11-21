@@ -1,0 +1,6 @@
+.main {
+    display: flexbox;
+    border-width: 3px;
+    background-color: grey; 
+    padding: 100px;
+}
