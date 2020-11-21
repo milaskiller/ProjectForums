@@ -18,7 +18,7 @@ router.post("/createuser", (req, res, next) => {
   console.log(req.body)
   var userID = nanoid();
   users.create({userID: userID, username: req.body.username, password: req.body.password})
-  res.redirect("/user/"+ userID)
+  res.redirect("/users/"+ userID)
 })
 
 router.get("/users", (req, res, next) => {
