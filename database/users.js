@@ -8,11 +8,26 @@ const newUser = new mongoose.Schema({
         unique: true,
         
     },
+
     password: {
         type: String,
         required: true,
     },
-    username: String,
+
+    username: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+
+    email: {
+        type: String,
+        unique: true,
+        required: true,
+    },
+
+    forums: Array,
+    
 })
 
 module.exports = mongoose.model("users", newUser)

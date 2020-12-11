@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <form action="/signup/auth" method="post" id="login" enctype="multipart/form-data">
+            <input type='file' name="avatar" enctype="multipart/form-data"/></br><img id="myImg" src="#" alt="your image" height=200 width=100>
+        
+        
+            <input type="email" name="email" id="usernameokun" placeholder="Email" required>
+            <input type="text" name="username" id="usernameokun" placeholder="Username" required>
+            <input type="password" name="password" id="passwodokun" placeholder="Password" required>
+            <input type="submit" value="submit">
+            
+            
+        </form>
+    </div>
+</body>
+
+<!-- <script type="text/javascript">
+    /* The uploader form */
+    $(function () {
+        $(":file").change(function () {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = imageIsLoaded;
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+    });
+
+    function imageIsLoaded(e) {
+        $('#myImg').attr('src', e.target.result);
+        $('#yourImage').attr('src', e.target.result);
+    };
+
+</script> -->
+</html>
