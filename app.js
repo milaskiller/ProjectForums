@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require("mongoose");
-
-mongoose.connect("mongodb://localhost:27017/pageDEV", {useUnifiedTopology: true, useNewUrlParser: true,})
+require("dotenv").config();
+mongoose.connect(process.env.MONGOUSER, {useUnifiedTopology: true, useNewUrlParser: true,})
 
 var indexRouter = require('./routes/index');
 
