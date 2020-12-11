@@ -1,19 +1,16 @@
 var mongoose = require("mongoose");
-
-
 const newUser = new mongoose.Schema({
     userID:{
         type: String,
         required: true,
         unique: true,
-        
+
     },
 
     password: {
         type: String,
         required: true,
     },
-
     username: {
         type: String,
         required: true,
@@ -27,7 +24,7 @@ const newUser = new mongoose.Schema({
     },
 
     forums: Array,
-    
+
 })
 
-module.exports = mongoose.model("users", newUser)
+module.exports = mongoose.model("users", newUser) 
