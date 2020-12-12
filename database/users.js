@@ -7,23 +7,26 @@ const newUser = new mongoose.Schema({
 
     },
 
-    password: {
+    Password: {
         type: String,
         required: true,
     },
-    username: {
+
+    Username: {
         type: String,
         required: true,
         unique: true,
     },
 
-    email: {
+    Email: {
         type: String,
         unique: true,
         required: true,
     },
 
-    forums: Array,
+    Forums: {
+        type: Array,
+    }
 
 })
 
