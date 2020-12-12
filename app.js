@@ -41,4 +41,4 @@ app.use(function(err, req, res, next) {
 });
 
 
-app.listen(80)
+app.listen(80, () => console.log("running on port 80"))
